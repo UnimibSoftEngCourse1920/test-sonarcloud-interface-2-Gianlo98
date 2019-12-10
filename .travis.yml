@@ -1,11 +1,12 @@
 language: csharp
 dist: trusty
-
 addons:
   sonarcloud:
-    organization: "unimibsoftengcourse1920" # the key of the org you chose at step #3
-    token: SONAR_TOKEN # encrypted value of your token
+    organization: unimibsoftengcourse1920
+    token:
+      secure: "d8WO445t5YvvD2UBqR/UjU0nmyG3gUdQ17QtOIGJkHTXb+fkmOsfpzUgKZy0rqW3sudti1/ETlovptS0qu/6ZYtx+ZZ309wfRCyJNAvfLNTOAo5/pGU9v87AVG65VPQNVH7zPHdZenirIFAIzUvCs2OU+FsLLV3BGH8JHzNfyf3PMBO7nrHI9t+AELy0FPRWLVQzs/rbStGcl7JIicdoMQFY6dsAYJs+8OY9/m8YvCRN5xhFlWpmyQiP1svCQIGfRBEjgh9xSL1Gtp22qGDeqPmqEdVsZ53HOGoVFa5/65Jns/mhs269ZIEdjrim2Qm0frF6gOMLAy4JD7rPw4XHumd9nfDty7zoQ5fpqk28CiPDsWgLEUAwPL5G0QAt1489XCwwJ3lgiISYgS2B1Kx7SnfCl4vLkGghYQHF2MAipgw6WCWDTnkhyhuP0yVpMSYOyoJh3dWKwI2KH14StQNmUlncYS6ja1c1U/p1qj4iz4o5xDE6bae+42Cf/GDcD2xvBQOVaLoiuHvvaHKc6NKWpcwjEJxy4gJnfvM+cBeQpSr+AzQdOaH2SSxUVr+gSmz7lgwS4JYXX9YWVvHs9RTGdQvNmpuWvgfroVzKfQ78BJWQv5VVnBTEGvAyRBOyyY7BgWvvHO8rd47ZqwVU0vfgREobRtjDzEg2J6kod04llDU="
 script:
-  # other script steps might be done before running the actual analysis
-  - sonar-scanner
-
+- sonar-scanner
+env:
+  global:
+    secure: hXQx0E20KPToZ1lVkFzSkfC1m/MPJY8Td4wf4AAJTECpzqgznJwa5Uf93QWk5xorsbxX77suJRpLM85Y4yXsCVOgt+mRFJW0V6q37mT5ukSCcZxnJqq32Wcmxd5sD5p93eKwGhzF7523jfT3nVzMRr/KCc6BHsbXMlSvfaQQNplc8Laj5Jv3zn1UvyfxzIE26dlb1z7Je40DWy/9MwhvBlZZlN8FI+naNRmWStdu0g+uEBTifKWzU/w+R18kBmpWvCu03zvycZBGJIW9Wg5zLGkYLR2oPE0gTrUUZXHNS+L+caqK0etVdDU6kEcdijKB1klWZ8ZO65EqZtgN6crRAv0vG/8DRmtlfadu1GGY36IGOOJjVeMhlCmX4o+VEVLLDNV4aLYhIl6CuYs70O7mO7kiug/o7d4yq0YZVxyudQVdlH87yLsXTXxq8GeaxL4Vdm6PUeG3LkE7wlnJV9wt4ZGBRwXUFkWHCmXeFIC+HZ3ZpSJDBeT39HzShJgR9UbJcYyGYgypxeQPHo9wyid5K4YYi8vc6YeE5mBt7YlFTGxNrwaNMqsEDyycr9ui9gvI9fE2O3F+jQaIlAZKZjARv/5T0cgvaW11W5OLTej8SHnMLVMBxPUAf3vgjTuL+eQ1BkQ9yHc6bMtaF3OQJyBcMADnI4ckHQ2BR9X79VfYp0M=
